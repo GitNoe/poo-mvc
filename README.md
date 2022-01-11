@@ -8,9 +8,9 @@
 
 3. Creación de un nuevo usuario y de la base de datos:
    - mysql -u root -p (entrar en root)
-   - GRANT ALL PRIVILEGES ON *.* TO 'noelia'@'localhost' IDENTIFIED BY 'PassWord?!CMS1234'; (new user)
+   - GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' IDENTIFIED BY 'password'; (new user)
    - \q (salir)
-   - mysql -u noelia -p (entrar en mi usuario)
+   - mysql -u user -p (entrar en mi usuario)
    - CREATE DATABASE cms_hp; (base de datos creada)
 
 4. Creación de tablas (código SQL):
