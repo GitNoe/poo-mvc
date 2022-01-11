@@ -117,3 +117,4 @@
 ## Fallo encontrado
 
 - en DbHelper.php -> utf8 estaba mal escrito (uft8) -> al abrir el proyecto en el navegador sigue apareciendo el árbol de directorios, aunque ahora al abrir la carpeta public aparece algo de front-end (pero con los estilos mal y las imágenes y las rutas rotas)
+- En la consola del servidor salen los errores: GET "dirección de archivos .css y .js" net::ERR_ABORTED 404 (Not Found)
