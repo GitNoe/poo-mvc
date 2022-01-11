@@ -77,7 +77,7 @@
 12. Edición de controller/NoticiaController (ver) -> funciones construct, index, activar, home, borrar, crear, editar
 13. Edición de controller/UsuarioController (ver) -> funciones construct, admin, entrar, salir, index, activar, borrar, crear, editar
 
-14. ERROR: el index.php de public no encuentra la clase AppController a pesar de estar incluída y llamada con "use" - TRAS 5 DÍAS LO OBVIO Y SIGO AÑADIENDO CÓDIGO
+14. ERROR: el index.php de public no encuentra la clase AppController a pesar de estar incluída y llamada con "use"
 
 15. Edición de las vistas no públicas (back-end) (ver):
     - view/admin/partials/header.php y view/admin/partials/footer.php (partials)
@@ -91,7 +91,7 @@
 
 16. Conclusiones finales: el código está completo pero la página no va, se abre el directorio de carpetas del proyecto y al entrar en public sale el error de antes
 
-## Cosas a probar cuando dea igual si rompe
+## Cosas a probar
 
 - ALTER DATABASE nombre_bd CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci; (cambiar juego de caracteres en cotejamiento)
 - if (!isset($_SERVER['REQUEST_URI']))
@@ -113,3 +113,7 @@
    }
    (tampoco funciona)
 - require_once'index.php'; (nada)
+
+## Fallo encontrado
+
+- en DbHelper.php -> utf8 estaba mal escrito (uft8) -> al abrir el proyecto en el navegador sigue apareciendo el árbol de directorios, aunque ahora al abrir la carpeta public aparece algo de front-end (pero con los estilos mal y las imágenes y las rutas rotas)
