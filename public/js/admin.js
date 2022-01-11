@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     //Cambiar clave
-    $("input[type=checkbox][name=cambiar_clave]").click(function () {
+    $("input[type=checkbox][name=cambiar_contraseña]").click(function () {
         $("#password").toggleClass( "hide" );
     });
 
