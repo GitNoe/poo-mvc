@@ -9,8 +9,8 @@ body{
 
 nav{
     background-color: #333;
-    -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-box-shadow: none;
     padding: 0 2rem;
 }
 nav img{
@@ -72,8 +72,8 @@ article .card-info{
 .card.horizontal.small .card-image img{margin-top: 20%;}
 .card.horizontal.noticia{
     border: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-box-shadow: none;
 }
 .card.horizontal.admin h4{margin: 0 0 0.5rem 0.5rem;}
 .card.horizontal.admin strong{margin-left: 0.5rem;}
@@ -85,8 +85,8 @@ article .card-info{
 .toast{
     background-color: transparent;
     border: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
+    -webkit-box-shadow: none;
     color: #333;
     cursor: pointer;
 }
