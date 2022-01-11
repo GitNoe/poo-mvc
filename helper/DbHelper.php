@@ -9,7 +9,7 @@ class DbHelper{
     function __construct(){
         
         // Conexión mediante PDO
-        $opciones = [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES uft8"];
+        $opciones = [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
         try {
             $this->db = new \PDO(
                 'mysql:host=localhost;dbname=cms_hp',
