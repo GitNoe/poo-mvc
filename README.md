@@ -109,7 +109,6 @@
                $_SERVER['REQUEST_URI'] .= '?' . $_SERVER['QUERY_STRING'];
          return $_SERVER['REQUEST_URI'];
       }
-
       return $_SERVER['REQUEST_URI'];
    }
    (tampoco funciona)
