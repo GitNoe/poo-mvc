@@ -112,6 +112,6 @@
     - Creo contact.css y contact.js y añado el código correspondiente de cada uno
     - Va bien (aunque los datos no irían a ningún sitio al final del formulario ya que no hay un action_page.php que los recoja)
 
-### Nota:
+## Nota
 
 Durante todo el proceso de creación, modificación y actualización de este proyecto se han realizado acciones en terminal para su control de versiones, comenzando con un "git init" y periódicamente con "git add ." y "git commit". De esta forma los cambios se han ido guardando en el repositorio de Github.
