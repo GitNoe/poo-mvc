@@ -11,7 +11,7 @@ use App\Controller\UsuarioController;
 
 //Asigno a sesión las rutas de las carpetas public y home, necesarias tanto para las rutas como para poder enlazar imágenes y archivos css, js
 $_SESSION['public'] = '/';
-$_SESSION['home'] = $_SESSION['public'].'index.php/';
+$_SESSION['home'] = $_SESSION['public'].'public/index.php/';
 
 //Defino y llamo a la función que autocargará las clases cuando se instancien
 spl_autoload_register('App\autoload');

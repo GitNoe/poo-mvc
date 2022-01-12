@@ -97,9 +97,14 @@
     - Creando la función en AppController
     - Añadiendo un case "contacto" en el index.php de public
     - Añadiendo la ruta en el menú de header.php (app)
-    - La página se ha creado y hay un enlace a ella, pero como con el resto de rutas da un error: "Not Found. The requested URL was not found on this server."
+    - Creando un contacto.php en la carpeta app
+    - La página se ha creado y hay un enlace a ella en el menú, pero como con el resto de rutas da un error: "Not Found. The requested URL was not found on this server."
 
-## Cosas que se han probado en los errores
+19. Tras repasar varias veces el código y reiniciar laragon otras tantas, ha decidido funcionar y por fin se ven todas las páginas del menú completas.
+
+20. 
+
+## Cosas que se han ido probando en los errores
 
 - ALTER DATABASE nombre_bd CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci; (cambiar juego de caracteres en cotejamiento)
 - if (!isset($_SERVER['REQUEST_URI']))
