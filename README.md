@@ -102,7 +102,12 @@
 
 19. Tras repasar varias veces el código y reiniciar laragon otras tantas, ha decidido funcionar y por fin se ven todas las páginas del menú completas.
 
-20. 
+20. Intento de entrar en el panel de administración con el usuario admin creado anteriormente -> acceso concedido
+    - Se pueden ver las páginas de inicio, noticias (con posibilidad de crearlas y modificarlas) y usuarios
+    - He tenido que modificar rutas en la carpeta admin también para que se muestre el css y js
+    - Creación de una noticia desde este panel de administración (sombrero seleccionador), y activación de la misma
+
+21. Por último, se tiene que añadir en la página de Contacto un formulario de Registro sacado de [aquí](https://www.w3schools.com/howto/howto_js_form_steps.asp)
 
 ## Cosas que se han ido probando en los errores
 

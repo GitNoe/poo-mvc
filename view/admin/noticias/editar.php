@@ -38,7 +38,7 @@
                 </div>
             </div>
             <?php if ($datos->imagen){ ?>
-                <img src="<?php echo $_SESSION['public']."img/".$datos->imagen ?>" alt="<?php echo $datos->titulo ?>">
+                <img src="<?php echo $_SESSION['public']."public/img/".$datos->imagen ?>" alt="<?php echo $datos->titulo ?>">
             <?php } ?>
         </div>
         <div class="col s12">

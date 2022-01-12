@@ -26,7 +26,7 @@
                 <div class="card-stacked">
                     <?php if ($row->imagen){ ?>
                         <div class="card-image">
-                                <img src="<?php echo $_SESSION['public']."img/".$row->imagen ?>" alt="<?php echo $row->titulo ?>">
+                                <img src="<?php echo $_SESSION['public']."public/img/".$row->imagen ?>" alt="<?php echo $row->titulo ?>">
                         </div>
                     <?php } ?>
                     <div class="card-content">
