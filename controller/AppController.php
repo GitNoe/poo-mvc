@@ -25,7 +25,7 @@ class AppController{
     public function index(){
 
         //Consulta a la bbdd
-        $rowset = $this->db->query("SELECT * FROM noticias WHERE activo=1 AND home=1 ORDER BY fecha DESC");
+        $rowset = $this->db->query("SELECT * FROM noticias WHERE activo=1 AND home=1 ORDER BY fecha ASC");
 
         //Asigno resultados a un array de instancias del modelo
         $noticias = array();
@@ -40,6 +40,11 @@ class AppController{
     public function acercade(){
         //Llamo a la vista
         $this->view->vista("app", "acerca-de");
+    }
+
+    public function contacto(){
+        //Llamo a la vista
+        $this->view->vista("app", "contacto");
     }
 
     public function noticias(){

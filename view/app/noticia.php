@@ -8,7 +8,7 @@
     <article class="col s12">
         <div class="card horizontal large noticia">
             <div class="card-image">
-                <img src="<?php echo $_SESSION['public']."img/".$datos->imagen ?>" alt="<?php echo $datos->titulo ?>">
+                <img src="<?php echo $_SESSION['public']."public/img/".$datos->imagen ?>" alt="<?php echo $datos->titulo ?>">
             </div>
             <div class="card-stacked">
                 <div class="card-content">

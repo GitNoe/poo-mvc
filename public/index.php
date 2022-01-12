@@ -60,6 +60,9 @@ switch ($ruta){
     case "acerca-de":
         controller()->acercade();
         break;
+    case "contacto":
+        controller()->contacto();
+        break;
     case "noticias":
         controller()->noticias();
         break;

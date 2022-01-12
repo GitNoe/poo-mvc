@@ -89,9 +89,17 @@
     - view/admin/noticias/editar.php
     - añadir function getSlug en ViewHelper
 
-16. Conclusiones finales: el código está completo pero la página no va, se abre el directorio de carpetas del proyecto y al entrar en public sale el error de antes
+16. Conclusiones finales: el código está completo pero la página no va, se abre el directorio de carpetas del proyecto y al entrar en public da un error de Not Found
 
-## Cosas a probar
+17. Se han modificado las rutas de los archivos de view/app, incluyendo la carpeta public previa, y sale una página de front-end pero las rutas entre achivos siguen sin ir
+
+18. A pesar de que la aplicación no funciona bien (imagino que falta corregir más rutas), he añadido una página de Contacto a mayores:
+    - Creando la función en AppController
+    - Añadiendo un case "contacto" en el index.php de public
+    - Añadiendo la ruta en el menú de header.php (app)
+    - La página se ha creado y hay un enlace a ella, pero como con el resto de rutas da un error: "Not Found. The requested URL was not found on this server."
+
+## Cosas que se han probado en los errores
 
 - ALTER DATABASE nombre_bd CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci; (cambiar juego de caracteres en cotejamiento)
 - if (!isset($_SERVER['REQUEST_URI']))
@@ -113,8 +121,3 @@
    }
    (tampoco funciona)
 - require_once'index.php'; (nada)
-
-## Fallo encontrado
-
-- en DbHelper.php -> utf8 estaba mal escrito (uft8) -> al abrir el proyecto en el navegador sigue apareciendo el árbol de directorios, aunque ahora al abrir la carpeta public aparece algo de front-end (pero con los estilos mal y las imágenes y las rutas rotas)
-- En la consola del servidor salen los errores: GET "dirección de archivos .css y .js" net::ERR_ABORTED 404 (Not Found)
