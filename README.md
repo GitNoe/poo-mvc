@@ -27,7 +27,7 @@
         PRIMARY KEY (`id`),
         UNIQUE KEY `usuario` (`usuario`),
         UNIQUE KEY `id` (`id`)
-    ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+         ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
    - CREATE TABLE `noticias` (
         `id` int(3) NOT NULL AUTO_INCREMENT,
@@ -42,7 +42,7 @@
         `imagen` varchar(64) DEFAULT NULL,
         PRIMARY KEY (`id`),
         UNIQUE KEY `id` (`id`)
-    ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+         ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 5. Edición de public/index.php: ver archivo completo (ver)
 6. Edición de helper/DbHelper y helper/ViewHelper (ver)
@@ -108,29 +108,10 @@
     - Creación de dos noticias desde este panel de administración (reliquias de la muerte y sombrero seleccionador), y activación de la misma
 
 21. Por último, se tiene que añadir en la página de Contacto un formulario de Registro sacado de [aquí](https://www.w3schools.com/howto/howto_js_form_steps.asp)
-    - Añado el código html en contato.php
-    - Creo contacto.css y contacto.js y añado el código correspondiente de cada uno
+    - Añado el código html en contacto.php
+    - Creo contact.css y contact.js y añado el código correspondiente de cada uno
     - Va bien (aunque los datos no irían a ningún sitio al final del formulario ya que no hay un action_page.php que los recoja)
 
-## Cosas que se han ido probando en los errores
+### Nota:
 
-- ALTER DATABASE nombre_bd CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci; (cambiar juego de caracteres en cotejamiento)
-- if (!isset($_SERVER['REQUEST_URI']))
-   {
-       $_SERVER['REQUEST_URI'] = substr($_SERVER['PHP_SELF'],1 );
-       if (isset($_SERVER['QUERY_STRING'])) { $_SERVER['REQUEST_URI'].='?'.$_SERVER['QUERY_STRING']; }
-   }
-(probado en index.php de public y no funciona)
-- cambiar $_SERVER['REQUEST_URI'] por $input->url() en el index.php (tampoco funciona)
-- function getRequestURL()
-   {
-      if (!isset($_SERVER['REQUEST_URI']) and isset($_SERVER['SCRIPT_NAME'])) {
-         $_SERVER['REQUEST_URI'] = $_SERVER['index'];
-         if (isset($_SERVER['QUERY_STRING']) and !empty($_SERVER['QUERY_STRING']))
-               $_SERVER['REQUEST_URI'] .= '?' . $_SERVER['QUERY_STRING'];
-         return $_SERVER['REQUEST_URI'];
-      }
-      return $_SERVER['REQUEST_URI'];
-   }
-   (tampoco funciona)
-- require_once'index.php'; (nada)
+Durante todo el proceso de creación, modificación y actualización de este proyecto se han realizado acciones en terminal para su control de versiones, comenzando con un "git init" y periódicamente con "git add ." y "git commit". De esta forma los cambios se han ido guardando en el repositorio de Github.
