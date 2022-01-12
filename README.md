@@ -48,11 +48,11 @@
 6. Edición de helper/DbHelper y helper/ViewHelper (ver)
 7. Edición de model/usuario y model/noticia (ver)
 
-8. Entrada por terminal de un texto largo para su guardado en la base de datos: (novas-bbdd.txt)
+8. Entrada por terminal de un texto largo para su guardado en la base de datos: (noticias-bbdd.txt)
    - mysql> INSERT INTO noticias VALUES (texto); -> esto ya es parte de las vistas pero aún no sale
    - además también se añaden en la carpeta public/img los archivos que se utilizarán después
 
-9. Entrada de algunos usuarios con contraseña: -> ¿¿ esto tendría que ir con UsuarioController ??
+9. Entrada de algunos usuarios con contraseña:
    - creamos un obtener-hash.php (ver archivo)
    - generamos las contraseñas hash desde el navegador modificando ese archivo
    - introducimos los datos en mysql:
@@ -105,9 +105,12 @@
 20. Intento de entrar en el panel de administración con el usuario admin creado anteriormente -> acceso concedido
     - Se pueden ver las páginas de inicio, noticias (con posibilidad de crearlas y modificarlas) y usuarios
     - He tenido que modificar rutas en la carpeta admin también para que se muestre el css y js
-    - Creación de una noticia desde este panel de administración (sombrero seleccionador), y activación de la misma
+    - Creación de dos noticias desde este panel de administración (reliquias de la muerte y sombrero seleccionador), y activación de la misma
 
 21. Por último, se tiene que añadir en la página de Contacto un formulario de Registro sacado de [aquí](https://www.w3schools.com/howto/howto_js_form_steps.asp)
+    - Añado el código html en contato.php
+    - Creo contacto.css y contacto.js y añado el código correspondiente de cada uno
+    - Va bien (aunque los datos no irían a ningún sitio al final del formulario ya que no hay un action_page.php que los recoja)
 
 ## Cosas que se han ido probando en los errores
 
